@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>    
   <title>2017 Census Data Exploration</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
@@ -15,38 +16,38 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="C:\Users\magco\UCB_Bootcamp_Homework\Web-Design-Challenge\WebVisualizations\index.html">2017 Census Data Exploration</a>
+                <a class="navbar-brand" href="index.html">2017 Census Data Exploration</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="C:\Users\magco\UCB_Bootcamp_Homework\Web-Design-Challenge\WebVisualizations\index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Top 10 counties with highest poverty</a></li>
-                    <li><a href="#">Income Histogram</a></li>
-                    <li><a href="#">Scatter Plot Population to Income</a></li>
-                    <li><a href="#">Scatter Plot % White to Income</a></li>
+                    <li><a href="viz_1.html">Top 10 counties with highest poverty</a></li>
+                    <li><a href="viz_2.html">Income Histogram</a></li>
+                    <li><a href="viz_3.html">Scatter Plot % White to Income</a></li>
+                    <li><a href="viz_4.html">Scatter Plot Population to Income</a></li>
                 </ul>
                 </li>
-                <li><a href="#">Comparison</a></li>
-                <li><a href="#">Data</a></li>
+                <li><a href="viz_comparisons.html">Comparison</a></li>
+                <li><a href="viz_data.html">Data</a></li>
             </ul>
         </div>
-    </nav>
- 
+    </nav> 
+
     <div class="row">
         <div class="col-md-8">
-            <h1>Exploring Census Data</h1>
+            <h1 class="text-center">Census Data Exploration</h1>           
         </div>
         <div class="col-md-4">
-            <h1>Visualizations</h1>
-        </div>
-    </div>
+            <h1 class="text-center">Visualizations</h1>
+            <br><br>
+        </div>    </div>
     <div class="row">
         <div class="col-md-3 mr-auto">
             <br><br>
             <a href='assets/usa-states-map.gif'>
-            <img src='assets/usa-states-map.gif' class='img-thumbnail'alt='Map of the 50 United States'>
+            <img src='assets/usa-states-map.gif' class='img-thumbnail img-responsive center-block'alt='Map of the 50 United States'>
             </a>
         </div>
 
@@ -58,12 +59,12 @@
             </p>
         </div>
         <div class="col-md-2">
-            <img src='visualizations/bar_chart_highest_poverty.png' class="img-thumbnail" alt='High Poverty Counties'>
-            <img src='visualizations/histogram_income.png' class="img-thumbnail" alt='Income Histogram'>
+            <a href=viz_1.html> <img src='visualizations/bar_chart_highest_poverty.png' class="img-thumbnail" alt='High Poverty Counties'> </a>
+            <a href=viz_2.html><img src='visualizations/histogram_income.png' class="img-thumbnail" alt='Income Histogram'></a>
         </div>
     <div class="col-md-2">
-        <img src='visualizations/scatter_income_to_pctWhite.png' class="img-thumbnail" alt='Scatter Plot % White to Income'>
-        <img src='visualizations/scatter_totalpop_to_income.png' class="img-thumbnail" alt='Scatter Plot Population to Income'>
+        <a href=viz_3.html><img src='visualizations/scatter_income_to_pctWhite.png' class="img-thumbnail" alt='Scatter Plot % White to Income'></a>
+        <a href=viz_4.html><img src='visualizations/scatter_totalpop_to_income.png' class="img-thumbnail" alt='Scatter Plot Population to Income'></a>
     </div>
 </div>
 </body>

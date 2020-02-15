@@ -5,14 +5,14 @@ h1 {
   align:"center";
 }
 body {
-  margin: 0;
+  margin: 10;
   padding: 0;
   background: lightcyan;
 }
 
 p {
-  margin: 10;
-  padding: 10;
+  margin: 20;
+  padding: 20;
   font-size: 20px;
 }
 
@@ -35,4 +35,14 @@ p {
 .nav a {
   text-decoration: none;
   color: #fff;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Here we define some styles that will ONLY be applied at screen sizes below 480 pixels */
+@media (max-width: 600px) {
+
 }

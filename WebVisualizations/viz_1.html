@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+  <title>Top 10 counties with highest poverty - 2017</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">2017 Census Data Exploration</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="viz_1.html">Top 10 counties with highest poverty</a></li>
+                    <li><a href="viz_2.html">Income Histogram</a></li>
+                    <li><a href="viz_3.html">Scatter Plot % White to Income</a></li>
+                    <li><a href="viz_4.html">Scatter Plot Population to Income</a></li>
+                </ul>
+                </li>
+                <li><a href="viz_comparisons.html">Comparison</a></li>
+                <li><a href="viz_data.html">Data</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="text-center">Top 10 counties with highest poverty</h1>           
+        </div>
+        <div class="col-md-4">
+            <h1 class="text-center">Visualizations</h1>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <div class="container-fluid px-0">
+                <img src='visualizations/bar_chart_highest_poverty.png' class='img-thumbnail img-responsive center-block'alt='High Poverty Counties'>
+            </div>
+            <br><br>
+            <p> For this chart, I excluded Puerto Rico from the dataset, 
+                because although Puerto Rico has the highest poverty counties, 
+                it is not technically a state. South Dakota and Mississippi have 
+                the poorest counties in this dataset.  
+            </p>
+            <br><br>
+        </div>
+   
+        <div class="col-md-2 col-sm-12">
+            <a href="viz_1.html"><img src='visualizations/bar_chart_highest_poverty.png' class="img-thumbnail" alt='High Poverty Counties'></a>
+            <a href="viz_2.html"><img src='visualizations/histogram_income.png' class="img-thumbnail" alt='Income Histogram'></a>
+        </div>
+        <div class="col-md-2 col-sm-12">
+            <a href="viz_3.html"><img src='visualizations/scatter_income_to_pctWhite.png' class="img-thumbnail" alt='Scatter Plot % White to Income'></a>
+            <a href="viz_4.html"><img src='visualizations/scatter_totalpop_to_income.png' class="img-thumbnail" alt='Scatter Plot Population to Income'></a>
+        </div>
+    </div>
+</body>
+</html>
